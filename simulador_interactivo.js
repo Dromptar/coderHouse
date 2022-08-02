@@ -50,7 +50,20 @@ class VideoGame {
     }
 }
 
-// Asking user to chose
-const game1 = new VideoGame(prompt("Give me a game"), prompt("Which platform?").toUpperCase());
-//console.log(game1.name +" on " + game1.platform + " is rated " + game1.rating());
-alert(game1.name +" on " + game1.platform + " is rated " + game1.rating());
+let userAns = '';
+
+do {
+    userAns = prompt("Wanna search some game rating? Yes/No").toUpperCase();
+    // Asking user to choose
+    const game1 = new VideoGame(prompt("Give me a game"), prompt("Which platform?").toUpperCase());
+    //console.log(game1.name +" on " + game1.platform + " is rated " + game1.rating());
+    alert(game1.name +" on " + game1.platform + " is rated " + game1.rating());
+    userAns = prompt("Wanna search another game? Yes/No").toUpperCase();
+}
+while (userAns != "No")
+    if(userAns == "No") {
+        alert("Hasta luego!");
+    }
+    
+
+
