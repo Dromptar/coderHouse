@@ -60,10 +60,10 @@ do {
     alert(game1.name +" on " + game1.platform + " is rated " + game1.rating());
     userAns = prompt("Wanna search another game? Yes/No").toUpperCase();
 }
-while (userAns != "No")
-    if(userAns == "No") {
-        alert("Hasta luego!");
-    }
+while (userAns != "NO")
+    
+    alert("Hasta luego!");
+    
     
 
 
