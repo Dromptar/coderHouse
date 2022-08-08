@@ -18,6 +18,7 @@ let dreamCastJeuxvideoPointCom = 18;
 let dreamCastGameBlog = 11.5;
 let dreamCastMillenium = 15.5;
 
+
 // Creating a class VideoGame with properties name, plateform and a function rating
 class VideoGame {
 
@@ -50,6 +51,8 @@ class VideoGame {
     }
 }
 
+
+
 let userAns = '';
 
 do {
@@ -64,6 +67,7 @@ while (userAns != "NO")
     
     alert("Hasta luego!");
     
+
     
 
 

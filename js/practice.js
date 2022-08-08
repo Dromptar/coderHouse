@@ -80,3 +80,57 @@
 
 // console.log(persona1.nombre + " " + persona2.nombre);
 
+
+// const sumar6 = (a) => a + 6;
+// const dividir2 = (a) => a / 2;
+
+// const array = [1, 2, 3, 4];
+
+// const operation = (arr, fn) => {
+//     for (const numero of arr) {
+//         console.log(fn(numero));
+//     }
+// };
+
+// operation(array, sumar6);
+// operation(array, dividir2);
+
+
+// Prices are in dollars
+
+class VideoGame {
+
+    constructor(name, plateform, price){
+        this.name = name.toUpperCase();
+        this.price = parseFloat(price);
+        this.plateform = plateform;
+        this.rateAverage = function(myArray) {
+            let sum = 0;
+            for( let i = 0; i < myArray.length; i++) {
+                sum += parseInt(myArray[i].rate)
+            }
+            return sum / myArray.length;
+        }
+    }
+}
+
+const games = [];
+games.push(new VideoGame("SUPER MARIO BROS", 10));
+games.push(new VideoGame("DONKEY KONG COUNTRY", 8));
+games.push(new VideoGame("LEGEND OF ZELDA", 15));
+games.push(new VideoGame("METAL GEAR SOLID", 12));
+
+const mags = [{name: "Gamekult", rate: 15},
+              {name: "Jeuxvideocom", rate: 12},
+              {name: "Gameblog", rate: 16},
+              {name: "Millenium", rate: 18}];
+
+
+for (const game of games) {
+    console.log(game.name + " is rated " + game.rateAverage(mags));
+}
+
+
+
+
+
